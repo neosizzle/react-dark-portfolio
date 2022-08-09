@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   /* Dark Mode */
   --black-color-bg: #0d1117;
@@ -108,6 +112,20 @@ body {
   );
 }
 
+/* .btn {
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  background-color: var(--gray-color);
+  color: rgb(255, 255, 255);
+  
+}
+.white-mode .btn {
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  background-color: var(--white-color-smoke-bg);
+  color: black;
+  
+} */
 .container {
   position: relative;
   width: auto;

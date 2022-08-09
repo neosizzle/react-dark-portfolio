@@ -5,35 +5,40 @@ import "./Bio.css";
 export const Bio = () => {
   const bios = [
     {
-      year: 2018,
-      description: "Trabaje en @Seplom",
+      date: "2020",
+      description: " 📚 9As SPM Graduate@Smk Seksyen 4 Bandar Kinrara",
     },
     {
-      year: 2019,
-      description: "Cree @Worlo_Studio que brinda servicios de diseño",
+      date: "2020 - 2022",
+      description: " 💻 Software developer @DAPPNOLOGY MALAYSIA SDN BHD",
     },
     {
-      year: 2021,
-      description: "Termine la carrera de platzi de Diseño UI",
+      date: "2021 - Present",
+      description: " 📚 Core Programme Completionist @42 Kuala Lumpur",
     },
+    {
+      date: "2022 - Present",
+      description: " 💻 Software developer @LS Machinery",
+    },
+    
   ];
 
   return (
     <section className="container container-lines">
-      <p className="purple-text">
-        📚 Bio <span className="purple-smoke-text">-Asì empecè</span>{" "}
+      <p className="gray-text">
+        📚 <span className="font-bold gray-smoke-text">Acedemics and Experiences</span>{" "}
       </p>
       <div className="line"></div>
       {bios.map((e) => (
         <div key={e.year} className="lines-items">
-          <span className="white-text">{e.year}: </span>
+          <span className="white-text">{e.date}: </span>
           {""}
           <span className="gray-text" data-tip="React-tooltip">
             {e.description}
           </span>
-          <ReactTooltip place="top" effects="float" className="custom-theme">
+          {/* <ReactTooltip place="top" effects="float" className="custom-theme">
             <BioDetails />
-          </ReactTooltip>
+          </ReactTooltip> */}
           <div className="line"></div>
         </div>
       ))}

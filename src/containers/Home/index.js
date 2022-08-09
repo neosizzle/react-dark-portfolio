@@ -9,7 +9,7 @@ import { Footer } from "../../components/Footer/Footer";
 import Project from "../../components/Project/Project";
 
 function Home() {
-  const [whiteMode, setQuietMode] = useState(false);
+  const [whiteMode, setQuietMode] = useState(true);
 
   const handleModeChange = () => {
     setQuietMode(!whiteMode);
@@ -19,9 +19,9 @@ function Home() {
     <div className={whiteMode ? "white-mode" : "dark-mode"}>
       <Mode handleModeChange={handleModeChange} />
       <Header />
-      <About />
+      <About whiteMode={whiteMode}/>
       <Bio />
-      <Project />
+      <Project whiteMode={whiteMode}/>
       <Footer />
     </div>
   );
