@@ -35,6 +35,12 @@ const projects = [
     description : "A simple animated visualizer that displays the underlying mechanism of sorting operations. It uses no animation library and all the state changes are done purely by react hooks. It allows regeneration of the display, size change, animation speed change as well as supporting different sorting algorithms like merge sort, selection sort and bubble sort.",
     stack : "Made with: Reactjs"
   },
+  {
+    cover : "/assets/ft_transcendence.gif",
+    title : "42Pong",
+    description : "A full stack containerized multiplayer pong game that has user management, chat support and a matchmaking queue.",
+    stack : "Made with: Reactjs, NestJs, Docker"
+  },
 ]
 
 function Project({whiteMode}) {

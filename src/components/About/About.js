@@ -3,7 +3,7 @@ import iconImage from "../../images/logo.jpg";
 
 export const About = ({whiteMode}) => {
   return (
-    <section className="container container-about">
+    <section className="container-about max-w-[40rem]">
       <div className="about-left">
         <span className="purple-text">
           ✋Jun Han Ng{" "}
