@@ -1,5 +1,3 @@
-import ReactTooltip from "react-tooltip";
-import { BioDetails } from "../BioDetails/BioDetails";
 import "./Bio.css";
 
 export const Bio = () => {
