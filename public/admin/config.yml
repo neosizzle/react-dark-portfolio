@@ -18,15 +18,3 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Date", name: "date", widget: "string"}
       - {label: "Desc", name: "desc", widget: "text"}
-
-  - name: "projects" # Used in routes, e.g., /admin/collections/blog
-      label: "Projects" # Used in the UI
-      folder: "_data/projects" # The path to the folder where the documents are stored
-      create: true # Allow users to create new documents in this collection
-      slug: "{{commit_date}}_project" # Filename template, e.g., YYYY-MM-DD-title.md
-      format: "json"
-      fields: # The fields for each document, usually in front matter
-        - {label: "Cover", name: "cover", widget: "image"}
-        - {label: "Description", name: "desc", widget: "text"}
-        - {label: "Title", name: "title", widget: "string"}
-        - {label: "Stack", name: "stack", widget: "string"}
