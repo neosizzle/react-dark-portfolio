@@ -1,4 +1,6 @@
 import "./Bio.css";
+// import { useEffect } from "react";
+// const API_URL = "https://api.github.com/repos/neosizzle/react-dark-portfolio/contents/_posts/blog/"
 
 export const Bio = () => {
   const bios = [
