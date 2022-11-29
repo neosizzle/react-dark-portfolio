@@ -1,7 +1,20 @@
 import "./About.css";
 import iconImage from "../../images/logo.jpg";
+import { useEffect } from "react";
+const API_URL = "https://api.github.com/repos/neosizzle/react-dark-portfolio/contents/_posts/blog/"
 
 export const About = ({whiteMode}) => {
+  useEffect(() => {
+    fetch(API_URL)
+    .then(res => res.json())
+    .then(data => console.log(data))
+    .catch(e => console.error(e))
+  
+    return () => {
+      
+    }
+  }, [])
+  
   return (
     <section className="container-about max-w-[40rem]">
       <div className="about-left">
